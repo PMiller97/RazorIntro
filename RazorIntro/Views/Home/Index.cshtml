@@ -2,30 +2,49 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<!DOCTYPE html>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    @* Single Line Statements *@
+    @{var message = "I am Single Line Statements";
+        int twelve = 12;
+        } 
+    @* Inline Markup *@
+    <h5>The message is : @message</h5>
+    <h5>Pete acts like a @twelve year old.</h5>
+
+    @* This is Code Block *@
+    @{
+        var num1 = 5;
+        var num2 = 10;
+        var result = num1 + num2;
+
+        var number1 = 50;
+        var number2 = 48;
+        var answer = number1 + number2;
+    }
+    @* Inline Markup *@
+    <h5>Sum of @num1 + @num2 = @result</h5>
+    <h5>The sum of @number1 + @number2 = @answer</h5>
+
+    @*This is code block*@
+    @{
+        var msg1 = "Hello";
+        int num = 5;
+
+        var msg2 = "Hey there";
+        var name = "Paige";
+    }
+    @*Inline Markup-HTML*@
+    <h5>@msg1, I am @num years old.</h5>
+    <h5>@msg2, my name is @name.</h5>
+
+    
+
+</body>
+</html>
